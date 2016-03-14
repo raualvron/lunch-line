@@ -1,0 +1,20 @@
+<div class="bodyApp">
+  <div class="col-md-12">
+  <p class="txt-logo">lunchLine</p>
+  </div>
+  <div class="list col-md-12" ng-repeat="item in items" ng-href="#/tab/courses/{{item.id}}">
+    <a class="item item-thumbnail-left effect7" ng-href="#/tab/courses/{{item.id}}">
+      <img src="{{item.image}}">
+      <h2>{{item.title}}</h2>
+      <p><i class="ion-android-person"></i> {{item.name}} {{item.surname}}</p>
+      <p><i class="ion-android-time"></i> {{item.created}}</p>
+      <div ng-value="rateStar = calculateAverage(item.id)"><uib-rating ng-model="rateStar" max="max" readonly="true" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating></div>
+    </a>
+  </div>
+</div>
+<a ng-href="#/new">
+  <button class="button button-float">
+  <i class="icon ion-plus"></i>
+</button>
+</a>
+

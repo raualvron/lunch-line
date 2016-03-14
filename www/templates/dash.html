@@ -1,0 +1,17 @@
+<div class="bodyApp">
+<div class="col-md-12">
+    <p class="txt-logo">lunchLine</p>
+</div>
+  <ion-content overflow-scroll="true">
+  <div class="list col-md-12" ng-repeat="table in tables">
+    <a class="item item-thumbnail-left effect7" ng-href="#/tab/courses/{{table.id}}">
+      <img src="{{table.image}}">
+      <h2>{{table.title}}</h2>
+      <p>{{ table.description | limitTo: 85 }}{{table.description.length > 85 ? '...' : ''}}</p>
+      <p><i class="ion-android-person"></i> {{table.name}} {{table.surname}}</p>
+      <p><i class="ion-android-time"></i> {{table.created}}</p>
+      <div class="cold-md-12" ng-value="rateStar = calculateAverage(table.id)"><uib-rating ng-model="rateStar" max="max" readonly="true" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating></div>
+    </a>
+  </div>
+</ion-content>
+</div>

@@ -1,0 +1,37 @@
+<div class="bodyApp">
+  <p class="txt-logo">lunchLine</p>
+  <div class="col-md-12" ng-repeat="item in items">
+    <ion-content overflow-scroll="true">
+    <div class="col-md-12 card padding-bottom-20">
+      <img class="img-responsive img-rounded margin-top-10" ng-src="{{item.image}}">
+      <h2>{{item.title}}</h2>
+      <p>{{item.description}}</p>
+      <p><i class="ion-android-person"></i> {{item.name}} {{item.surname}}</p>
+      <p><i class="ion-android-time"></i> {{item.created}}</p>
+      Total vote: <span ng-value="rateStar = calculateAverage($index)"><uib-rating ng-model="rateStar" max="max" readonly="true" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating></span>
+    </div>
+    <div ng-repeat="it in item.comment" class="card">
+      <div class="col-md-12">
+        <p>{{it.name}}<span ng-value="rateID = {{it.star}}"><uib-rating ng-model="rateID" max="max" readonly="true" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating></p>
+        <p>{{it.comment}}</p>
+      </div>
+    </div>
+    <div ng-show="getParent()" class="text-center">
+      <div class="col-md-12">
+      <button ng-click="isCommentForm = !isCommentForm" class="button button-small button-stable">Write a comment..</button>
+    </div>
+      <div ng-show="isCommentForm">
+        <div class="col-md-12 card">
+          <p class="fa-size-3 text-center margin-top-10">You comment</p>
+          <form ng-submit="createComment(formData)" name="dataForm" class="text-center margin-bottom-20">
+            <textarea rows="4" cols="50" maxlength="50" name="comment" ng-model="formData.comment" class="form-control margin-bottom-10" placeholder="Write your comment" required="" autofocus=""></textarea>
+            <uib-rating ng-model="formData.star" max="5" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating>
+            <br>
+            <input type="submit" value="Send comment" class="margin-top-10">
+          </form>
+        </div>
+      </div>
+    </div>
+    </ion-content>
+  </div>
+</div>

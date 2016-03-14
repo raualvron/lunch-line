@@ -1,0 +1,15 @@
+<div class="bodyApp">
+	<p class="txt-logo">lunchLine</p>
+	<form ng-submit="addCourse(formData)" class="form-signin">
+		<input type="text" ng-model="formData.title" class="form-control margin-bottom-20" placeholder="Title" required="" autofocus="">
+
+		<input type="text" ng-model="formData.description" class="form-control margin-bottom-20" placeholder="Description" required="" autofocus="">
+		<div class="button button-icon icon ion-camera" ng-click="getPhoto()"></div>
+		<div ng-repeat="image in images">
+			<img  ng-src="{{image}}" width="100%" />
+		</div>
+		<div>
+			<button type="submit" class="button button-block button-positive">Create course</button>
+		</div>
+	</form>
+</div>

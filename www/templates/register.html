@@ -1,0 +1,14 @@
+<div class="bodyApp">
+  <p class="txt-logo">lunchLine</p>
+    <form ng-submit="createUser(formData)" name="dataForm" class="form-signin">
+      <input type="email" name="email" ng-model="formData.mail" class="form-control margin-bottom-20" placeholder="Email" required="" autofocus="">
+      <input type="password" name="pass" ng-model="formData.pass" class="form-control margin-bottom-20" placeholder="Password" required="" autofocus="">
+      <input type="text" name="name" ng-model="formData.name" class="form-control margin-bottom-20" placeholder="Name" required="" autofocus="">
+      <input type="text" name="surname" ng-model="formData.surname" class="form-control margin-bottom-20" placeholder="Surname" required="" autofocus="">
+      <input type="text" name="city" ng-model="formData.city" class="form-control margin-bottom-20" placeholder="City" required="" autofocus="">
+    <div>
+      <button type="submit" ng-disabled="dataForm.email.$invalid || dataForm.pass.$invalid || dataForm.name.$invalid" class="button button-block button-positive">Create user</button>
+    </div>
+  </form>
+
+  </div>

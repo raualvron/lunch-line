@@ -1,0 +1,10 @@
+<div class="bodyApp">
+  <p class="txt-logo">lunchLine</p>
+    <form ng-submit="resetPass(formData)" name="formPass" class="form-signin">
+      <input type="email" ng-model="formData.mail" name="email" class="form-control" placeholder="Write you mail" required="" autofocus="">
+    <div>
+      <button type="submit" ng-disabled="formPass.email.$invalid" class="button button-block button-positive">Reset my password</button>
+    </div>
+  </form>
+
+  </div>

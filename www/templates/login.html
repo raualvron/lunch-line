@@ -1,0 +1,15 @@
+<div class="bodyApp">
+  <p class="txt-logo">lunchLine</p>
+  <div class="container-form">
+    <form ng-submit="signIn(formData)" name="dataForm" class="form-signin">
+      <input type="email" name="email" ng-model="formData.mail" class="form-control margin-bottom-20" placeholder="Email" required>
+      <input type="password" name="pass" ng-model="formData.pass" class="form-control" placeholder="Password" required>
+      <div class="col-md-12 b-user" style="margin-bottom: 20px">
+        <a href="#/register">Sign Up</a> | <a href="#/reset"> Forgot my password</a>
+      </div>
+      <div>
+        <button type="submit" ng-disabled="dataForm.email.$invalid || !dataForm.pass.$dirty" class="button button-block button-positive">SignIn</button>
+      </div>
+    </form>
+  </div>
+</div>

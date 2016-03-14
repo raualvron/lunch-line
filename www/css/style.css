@@ -1,0 +1,116 @@
+/* Empty. Add your own CSS if you like */
+.bodyApp {
+	font-family: 'Lobster Two', cursive;
+    background-image: url('../img/background-app.jpg');
+    background-size: auto !important;
+   	background-repeat: no-repeat;
+    background-position: left top;
+    height: 100%;
+    width: 100% !important;
+    border-top: 5px solid #e0ac33;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.grade-a {
+	background-color: #e0ac33 !important;
+	padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: 0px;
+}
+
+.txt-logo {
+	font-family: 'Lobster Two', cursive;
+	font-size: 30pt;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+
+.margin-top-10 {margin-top: 10px;}
+.margin-top-20 {margin-top: 20px;}
+.margin-top-20 {margin-top: 30px;}
+.margin-top-30 {margin-top: 40px;}
+.margin-top-40 {margin-top: 50px;}
+.margin-top-50 {margin-top: 60px;}
+
+.padding-top-10 {padding-top: 10px;}
+.padding-top-20 {padding-top: 20px;}
+.padding-top-20 {padding-top: 30px;}
+.padding-top-30 {padding-top: 40px;}
+.padding-top-40 {padding-top: 50px;}
+.padding-top-50 {padding-top: 60px;}
+
+.text-center {text-align: center}
+
+
+.margin-bottom-10 {margin-bottom: 10px;}
+.margin-bottom-20 {margin-bottom: 20px;}
+.margin-bottom-20 {margin-bottom: 30px;}
+.margin-bottom-30 {margin-bottom: 40px;}
+.margin-bottom-40 {margin-bottom: 50px;}
+.margin-bottom-50 {margin-bottom: 60px;}
+
+.padding-bottom-10 {padding-bottom: 10px;}
+.padding-bottom-20 {padding-bottom: 20px;}
+.padding-bottom-20 {padding-bottom: 30px;}
+.padding-bottom-30 {padding-bottom: 40px;}
+.padding-bottom-40 {padding-bottom: 50px;}
+.padding-bottom-50 {padding-bottom: 60px;}
+
+.fa-size-1 { font-size: 10pt; }
+.fa-size-2 { font-size: 13pt; }
+.fa-size-3 { font-size: 16pt; }
+.fa-size-4 { font-size: 19pt; }
+.fa-size-5 { font-size: 22pt; }
+.fa-size-6 { font-size: 25pt; }
+
+.user-info {font-size: 12pt; color : #ffffff;}
+.b-user,.b-user a {
+	color: #ffffff;
+}
+
+.tab-nav { background-color: #e0ac33 !important; border-top: 2px solid #fff;}
+.tab-nav .tab-item { color: #fff !important; padding-top: 7px}
+.tabs { height: 60px !important; }
+
+.list {padding-left: 10px; padding-right: 10px;}
+
+
+.effect7 {
+    -webkit-box-shadow:0 1px 24px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 10px 24px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 10px 24px rgba(0, 0, 0, 0.3), 0 0 0px rgba(0, 0, 0, 0.1) inset;
+}
+
+.button-float{
+  background: #e0ac33 !important;
+  color:white !important;
+  z-index: 10000 !important;
+  position: absolute !important; 
+  bottom: 70px;
+  right: 10px !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+  -webkit-transition: 0.2s linear !important;
+  transition: 0.2s linear !important;
+  -webkit-transition-property: -webkit-transform, all !important;
+  transition-property: transform, all !important;
+
+}
+
+.button-float:hover{
+  -webkit-transform: translate3d(0, -20px, 0)  !important;
+  transform: translate3d(0, -5px, 0) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) !important;
+  background: darken(#ef473a, 20%) !important;
+}
+
+.overflow-scroll > .scroll {
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    margin-top: 25%;
+}
